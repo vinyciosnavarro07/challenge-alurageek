@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek</title>
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu-item.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu-lista.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/logo-img.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho-input.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape.css">
+        <link rel="stylesheet" href="./assets/css/rodape/contato.css">
+        <link rel="stylesheet" href="./assets/css/formulario/formulario.css">
+        <link rel="stylesheet" href="./assets/css/rodape/info-criador.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape-logo.css">
+        <link rel="stylesheet" href="./assets/css/formulario/login.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape-logo-container.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao-container.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img src="./assets/img/logo-img/alurageek-logo.png" alt="logo da alurageek" class="logo__img">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><input class="cabecalho__input" type="search" placeholder="O que deseja encontrar?"></li>
+                    <li class="menu__item"><a href="./index.html"><button class="botao__login">Ínicio</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="conteudo__principal__login">
+            <section class="login">
+                <form class="formulario">
+                    <fieldset>
+                        <legend class="formulario__legenda">Iniciar sessão</legend>
+                        <div class="input__container">
+                            <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email"  autofocus="true" required>
+                            <label class="input__label" for="email">Email</label>
+                            <span class="input__mensagem__erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input__container">
+                            <input name="senha" id="senha" class="input" type="password" placeholder="Senha" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$" 
+                            title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e uma minúscula, um número e não deve conter símbolos." data-tipo="senha" required>
+                            <label class="input__label" for="senha">Senha</label>
+                            <span class="input__mensagem__erro">Este campo não está válido</span>
+                        </div>
+                    <fieldset>
+                        <div class="botao__container">
+                            <button id="btn" class="botao" type="submit" onclick="a(); return false">Entrar</button>
+                        </div>
+                </form>
+            </section>
+        </div>
+        <footer class="rodape">
+            <div class="rodape__logo__container">
+                <img class="rodape__logo" src="./assets/img/logo-img/alurageek-logo.png" alt="logo da alurageek">
+            </div>
+            <div class="info__criador">
+                <p class="info__nome">Desenvolvido por Vinycios Navarro</p>
+                <p class="info__ano">2023</p>
+            </div>
+        </footer>
+        <script type="module" src="./js/app.js" ></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

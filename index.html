@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek</title>
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu-item.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu-lista.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/logo-img.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho-input.css">
+        <link rel="stylesheet" href="./assets/css/banner/banner-img.css">
+        <link rel="stylesheet" href="./assets/css/banner/banner.css">
+        <link rel="stylesheet" href="./assets/css/banner/banner-titulo.css">
+        <link rel="stylesheet" href="./assets/css/banner/banner-bloco.css">
+        <link rel="stylesheet" href="./assets/css/banner/banner-descricao.css">
+        <link rel="stylesheet" href="./assets/css/banner/banner-info.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos-img.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos-nome.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos-preco.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos-conteudo.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos-titulo.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos.css">
+        <link rel="stylesheet" href="./assets/css/produtos/link-estilo.css">
+        <link rel="stylesheet" href="./assets/css/produtos/titulo-bloco.css">
+        <link rel="stylesheet" href="./assets/css/produtos/produtos-bloco.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape.css">
+        <link rel="stylesheet" href="./assets/css/rodape/contato.css">
+        <link rel="stylesheet" href="./assets/css/formulario/formulario.css">
+        <link rel="stylesheet" href="./assets/css/rodape/info-criador.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape-logo.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape-logo-container.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao-container.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao-hidden.css">
+    </head>
+    <body">
+        <header class="cabecalho">
+            <img src="./assets/img/logo-img/alurageek-logo.png" alt="logo da alurageek" class="logo__img">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="./formulario-login.html"><button class="botao__login">Login</button></a></li>
+                    <li class="menu__item"><input class="cabecalho__input" id="caixa-pesquisa" type="search" placeholder="Digite o nome do produto..."></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <div class="banner__bloco">
+                <img class="banner__img" src="./assets/img/banner-img/banner-image.png" alt="Banner contendo descontos em produtos">
+                <div class="banner__info">
+                    <h1 class="banner__titulo">Promoção de produtos</h1>
+                    <p class="banner__descricao">Produtos selecionados com até 33% de desconto</p>
+                    <a href="#produtos" class="link-estilo"><button class="botao__banner">Ver produtos</button></a>
+                </div>
+            </div>
+        </section>
+        <div class="conteudo__principal">
+            <section id="produtos" class="produtos" >
+                <div class="titulo__bloco">
+                    <h2 class="produtos__titulo">Produtos</h2>
+                    <a class="link__estilo" href="#produtos">Ver tudo</a>
+                </div>
+                <div class="produtos__conteudo" data-product>
+                </div>
+            </section>
+        </div>
+            <footer class="rodape">
+                <div class="rodape__logo__container">
+                    <img class="rodape__logo" src="./assets/img/logo-img/alurageek-logo.png" alt="Logo da AluraGeek">
+                </div>
+
+                <section class="contato">
+                    
+                    <form class="formulario">
+                        <fieldset>
+                            <legend class="formulario__legenda">Fale conosco</legend>
+                            <div class="input__container">
+                                <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome" maxlength="40" required>
+                                <label class="input__label" for="nome">Nome</label>
+                                <span class="input__mensagem__erro">Este campo não está válido</span>
+                            </div>
+                            <div class="input__container">
+                                <input name="mensagem" id="mensagem" class="input" type="text" placeholder="Escreva uma mensagem" data-tipo="mensagem" maxlength="40" required>
+                                <label class="input__label" for="mensagem">Mensagem</label>
+                                <span class="input__mensagem__erro">Este campo não está válido</span>
+                            </div>
+                        <fieldset>
+                            <div class="botao__container">
+                                <button class="botao">Enviar mensagem</a>
+                            </div>
+                    </form>
+                </section>
+                <div class="info__criador">
+                    <p class="info__nome">Desenvolvido por Vinycios Navarro</p>
+                    <p class="info__ano">2023</p>
+                </div>
+            </footer>
+            <script src="./js/app.js" type="module"></script>
+    </body>
+    <script type="module" src="./controller/listaProdutos-controller.js"></script>
+    <script src="./controller/buscaProduto-controller.js"></script>
+</html>

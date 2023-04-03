@@ -1,0 +1,15 @@
+.cabecalho__input{
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #2A7AE4;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px){
+    .cabecalho__input{
+        width: 125px;
+        font-size: 9px;
+    }
+}

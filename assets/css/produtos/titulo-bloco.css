@@ -1,0 +1,4 @@
+.titulo__bloco{
+    display: flex;
+    justify-content: space-between;
+}

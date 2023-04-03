@@ -1,0 +1,12 @@
+.produtos__conteudo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px){
+    .produtos__conteudo{
+        justify-content: space-around;
+    }
+}

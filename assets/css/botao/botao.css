@@ -1,0 +1,53 @@
+.botao{
+    background-color: #0D1117;
+    height: 40px;
+    width: 150px;
+    border-color: #2A7AE4;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.botao__login{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: #2A7AE4;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.botao__login:hover{
+    background-color: #030405;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.botao__banner{
+    background-color: #0D1117;
+    height: 40px;
+    width: 150px;
+    border-color: #2A7AE4;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.botao__banner:hover{
+    background: transparent;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 768px){
+    .botao__login{
+        width: 80px;
+        height: 30px;
+    }
+
+    .botao__banner{
+        width: 90px;
+        height: 30px;
+    }
+}

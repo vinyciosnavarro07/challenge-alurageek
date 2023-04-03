@@ -1,0 +1,11 @@
+.botao__deletar{
+    padding: 0;
+    font-size: 15px;
+    border-radius:3px;
+    border-style: solid 1px;
+    cursor: pointer;
+}
+
+.botao__deletar:hover{
+    color: #df2525;
+}

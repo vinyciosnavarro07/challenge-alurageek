@@ -1,0 +1,15 @@
+.banner__info{
+    position: absolute;
+    color: #ffffff;
+    top: 15%;
+    left: 5%;
+    
+}
+
+@media screen and (max-width: 768px){
+    .banner__info{
+        top: 10%;
+        font-size: 10px;
+    }
+}
+

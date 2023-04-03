@@ -1,0 +1,23 @@
+.conteudo__principal{
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #e5e3e3;
+}
+
+.conteudo__principal__login{
+    padding-bottom: 5rem;
+    background-color: #e5e3e3;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 768px){
+    .conteudo__principal{
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

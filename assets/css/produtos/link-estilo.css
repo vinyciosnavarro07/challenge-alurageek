@@ -1,0 +1,9 @@
+.link__estilo{
+    text-decoration: none;
+    color: #2A7AE4;
+}
+
+.link__estilo:hover{
+    color: #174685;
+}
+

@@ -1,0 +1,5 @@
+.menu__lista{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}

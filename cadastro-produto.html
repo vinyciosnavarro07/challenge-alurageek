@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek</title>
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu-item.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu-lista.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/menu.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/logo-img.css">
+        <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho-input.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape.css">
+        <link rel="stylesheet" href="./assets/css/rodape/contato.css">
+        <link rel="stylesheet" href="./assets/css/rodape/info-criador.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape-logo.css">
+        <link rel="stylesheet" href="./assets/css/formulario/login.css">
+        <link rel="stylesheet" href="./assets/css/rodape/rodape-logo-container.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao-container.css">
+        <link rel="stylesheet" href="./assets/css/botao/botao.css">
+        <link rel="stylesheet" href="./assets/css/formulario/enviar-img.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img src="./assets/img/logo-img/alurageek-logo.png" alt="logo da alurageek" class="logo__img">
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="./menu-admin.html"><button class="botao">Voltar</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="conteudo__principal__login">
+            <section class="login">
+                <form class="formulario" data-form>
+                    <fieldset>
+                        <legend class="formulario__legenda">Adicionar novo produto</legend>
+                        <div class="input__container">
+                            <h3 class="input__titulo">Adicionar imagem ao produto</h3>
+                            <input name="arquivo" id="arquivo" type="url" accept="image/*" placeholder="Cole aqui o link da imagem"
+                            data-tipo="arquivo" required>
+                            <label class="input__label__arquivo" for="arquivo">
+                                <span class="picture__image">Escolha uma imagem</span>
+                            </label>
+                            <span class="input__mensagem__erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input__container">
+                            <h3 class="input__titulo">Nome do produto</h3>
+                            <input name="nome" id="nome" class="input" type="text" placeholder="Adicione o nome..."
+                            data-tipo="nome" required>
+                            <label class="input__label" for="nome">Nome do produto</label>
+                            <span class="input__mensagem__erro">Este campo não está válido</span>
+                        </div>
+                        <div class="input__container">
+                            <h3 class="input__titulo">Preço</h3>
+                            <input name="preco" id="preco" class="input" type="text" placeholder="Preço"
+                            data-tipo="preco" required>
+                            <label class="input__label" for="preco">Preço</label>
+                            <span class="input__mensagem__erro">Este campo não está válido</span>
+                        </div>
+                    <fieldset>
+                        <div class="botao__container">
+                            <button type="submit" class="botao">Adicionar produto</a>
+                        </div>
+                </form>
+            </section>
+        </div>
+        <footer class="rodape">
+            <div class="rodape__logo__container">
+                <img class="rodape__logo" src="./assets/img/logo-img/alurageek-logo.png" alt="logo da alurageek">
+            </div>
+            <div class="info__criador">
+                <p class="info__nome">Desenvolvido por Vinycios Navarro</p>
+                <p class="info__ano">2023</p>
+            </div>
+        </footer>
+        <script src="./js/app.js" type="module"></script>
+        <script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+    </body>
+    <script type="module" src="./controller/cadastraProdutos-controller.js"></script>
+    <script src="./js/input-img.js"></script>
+</html>
