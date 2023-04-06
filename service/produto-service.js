@@ -1,5 +1,5 @@
 const listaProdutos = () => {
-    return fetch(`http://localhost:3000/produto`)
+    return fetch(`https://my-json-server.typicode.com/vinyciosnavarro07/backjson-server/produto`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -9,7 +9,7 @@ const listaProdutos = () => {
 }   
 
 const criaProdutos = (imagem, nome, preco) => {
-    return fetch(`http://localhost:3000/produto`, {
+    return fetch(`https://my-json-server.typicode.com/vinyciosnavarro07/backjson-server/produto`, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json'
@@ -29,7 +29,7 @@ const criaProdutos = (imagem, nome, preco) => {
 }
 
 const removeProduto = (id) => {
-    return fetch(`http://localhost:3000/produto/${id}`, {
+    return fetch(`https://my-json-server.typicode.com/vinyciosnavarro07/backjson-server/produto/${id}`, {
         method: 'DELETE'
     }).then(resposta => {
         if(!resposta.ok){
@@ -39,7 +39,7 @@ const removeProduto = (id) => {
 }
 
 const detalhaProduto = (id) => {
-    return fetch(`http://localhost:3000/produto/${id}`)
+    return fetch(`https://my-json-server.typicode.com/vinyciosnavarro07/backjson-server/produto/${id}`)
     .then(resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -49,7 +49,7 @@ const detalhaProduto = (id) => {
 }
 
 const atualizaProduto = (id, imagem, nome, preco) => {
-    return fetch(`http://localhost:3000/produto/${id}`, {
+    return fetch(`https://my-json-server.typicode.com/vinyciosnavarro07/backjson-server/produto/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type' : 'application/json'
