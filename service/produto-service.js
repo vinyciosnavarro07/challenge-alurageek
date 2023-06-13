@@ -1,4 +1,4 @@
-const listaProdutos = (imagem, nome, preco) => {
+const listaProdutos = () => {
     return fetch(`https://json-test-eosin.vercel.app/produto`)
     .then(resposta => {
         if(resposta.ok){
