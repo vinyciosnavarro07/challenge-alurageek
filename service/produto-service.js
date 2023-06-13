@@ -24,7 +24,6 @@ const criaProdutos = (imagem, nome, preco) => {
         if(resposta.ok){
             return resposta.body
         }
-        throw new Error('Não foi possível criar um produto')
     })
 }
 

@@ -17,7 +17,7 @@ import { produtoService } from "../service/produto-service.js";
     }
     catch(erro){
         console.log(erro)
-        window.location.href = ''
+        window.location.href = './menu-admin.html'
     }
     
     const formulario = document.querySelector('[data-form]')
@@ -30,7 +30,7 @@ import { produtoService } from "../service/produto-service.js";
         }
         catch(erro){
             console.log(erro)
-            window.location.href = ''
+            window.location.href = './menu-admin.html'
         }
     })
 })()
